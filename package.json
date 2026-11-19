@@ -1,0 +1,15 @@
+{
+  "name": "explainer-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Narrated 3D explainer videos for calculus, synced to the spoken word",
+  "scripts": {
+    "setup": "npm install && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt"
+  },
+  "dependencies": {
+    "katex": "^0.16.11",
+    "puppeteer-core": "^23.11.1",
+    "three": "^0.170.0"
+  }
+}

@@ -1,0 +1,5 @@
+[
+  {"id": "1a", "scene": "s1", "text": "Start with a square in the x y plane. Above it sits the surface z equals four, minus a quarter of x minus two point five squared, minus the same thing in y, over that square."},
+  {"id": "1b", "scene": "s1", "text": "Every point of the square is an input, and the surface gives that input a height.", "gap": 1.1},
+  {"id": "2a", "scene": "s2", "text": "Now slice the surface where y is held fixed. Along that slice, the slope is the partial derivative with respect to x.", "gap": 1.5}
+]

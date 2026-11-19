@@ -1,0 +1,3 @@
+#!/bin/sh
+# Studio command line: ./studio <command> <video> ...   (run with no arguments for usage)
+exec node "$(dirname "$0")/tools/studio.mjs" "$@"

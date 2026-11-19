@@ -1,0 +1,6 @@
+node_modules/
+.venv/
+out/
+videos/*/audio/
+videos/_template/timeline.json
+.DS_Store

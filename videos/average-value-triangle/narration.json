@@ -1,0 +1,60 @@
+[
+  {"id": "0a", "scene": "s0", "text": "Question eighteen. Set up a double integral for the average value of f of x, y, equals eight minus four x squared, over the triangle D, with corners at zero zero, zero five, and five five."},
+  {"id": "0b", "scene": "s0", "text": "Here is the answer that got marked wrong. And here is the answer key."},
+  {"id": "0c", "scene": "s0", "text": "Let's work out exactly what went wrong, and, just as important, what didn't.", "gap": 1.1},
+
+  {"id": "1a", "scene": "s1", "text": "First, what you actually submitted. One over thirteen point five, times the integral from zero to five, of the integral from zero to y, of eight minus four x squared, d x, d y."},
+  {"id": "1b", "scene": "s1", "text": "Look at the bounds. The inner integral says x runs from zero up to y. That's a horizontal strip."},
+  {"id": "1c", "scene": "s1", "text": "The outer integral says y runs from zero up to five. So the strip sweeps upward, and paints in a region."},
+  {"id": "1d", "scene": "s1", "text": "Put together, the bounds say: zero, is at most x, is at most y, is at most five. That is precisely the triangle with corners zero zero, zero five, and five five.", "gap": 0.6},
+  {"id": "1e", "scene": "s1", "text": "The answer key just integrates in the other order. y goes first, from x up to five. Then x, from zero to five."},
+  {"id": "1f", "scene": "s1", "text": "Those are vertical strips, sweeping left to right. Same inequalities. Same triangle."},
+  {"id": "1g", "scene": "s1", "text": "Both orders cover the same region. The order of integration was not a mathematical error.", "gap": 1.1},
+
+  {"id": "2a", "scene": "s2", "text": "So what was wrong? The number out front."},
+  {"id": "2b", "scene": "s2", "text": "The triangle has base five and height five. So its area is one half, times five, times five. That's twenty-five halves, or twelve point five."},
+  {"id": "2c", "scene": "s2", "text": "An average divides by that area. And one over twelve point five is two over twenty-five. Not one over thirteen point five."},
+  {"id": "2d", "scene": "s2", "text": "So, keeping your exact order of integration, a correct answer is two over twenty-five, times the very same double integral."},
+  {"id": "2e", "scene": "s2", "text": "You had the average value structure, the function, and the region right. The denominator was the one remaining error. That is the strongest argument to bring to your professor.", "gap": 1.2},
+
+  {"id": "3a", "scene": "s3", "text": "Now the conceptual knot. What is the triangle, and what is the height?"},
+  {"id": "3b", "scene": "s3", "text": "You're right that the output can be read as a height: z equals f of x, y, which is eight minus four x squared."},
+  {"id": "3c", "scene": "s3", "text": "The distinction is this. The triangle specifies the input locations, the points x, y, down on the floor. The function assigns a height, z, to each of those locations."},
+  {"id": "3d", "scene": "s3", "text": "For example, the point two, three lies inside the triangle, because zero is less than two, is less than three, is less than five."},
+  {"id": "3e", "scene": "s3", "text": "At that location, f of two, three is eight minus four times two squared, which is negative eight."},
+  {"id": "3f", "scene": "s3", "text": "So the matching point on the surface is two, three, negative eight. The input location is still inside the triangle. Its output just happens to sit below the reference plane, z equals zero.", "gap": 1.2},
+
+  {"id": "4a", "scene": "s4", "text": "Here's the sneaky part. If you sketch eight minus four x squared as a familiar parabola, it is very easy to mentally put it on the same axes as the triangle."},
+  {"id": "4b", "scene": "s4", "text": "And on that picture, the parabola seems to cut through the triangle, and then leave it. As if it were fencing off part of the region."},
+  {"id": "4c", "scene": "s4", "text": "But those two pictures use their vertical axes for different quantities. In the triangle's picture, the vertical axis is y. In the parabola's picture, the vertical axis is z."},
+  {"id": "4d", "scene": "s4", "text": "So swing the parabola up, out of the page. Now it stands over the x axis, as a height profile."},
+  {"id": "4e", "scene": "s4", "text": "And since the formula has no y in it, that same profile gets copied straight back along the y direction, wherever the triangle allows."},
+  {"id": "4f", "scene": "s4", "text": "The surface keeps falling, all the way down to negative ninety-two at x equals five. So let's squash the vertical scale to see the whole thing."},
+  {"id": "4g", "scene": "s4", "text": "The parabola never fences in the region. The triangle alone decides where we integrate. The parabola only decides how high.", "gap": 1.2},
+
+  {"id": "5a", "scene": "s5", "text": "Now slide x across. On the floor, the bright strip shows the allowed inputs at that x: y runs from x up to five."},
+  {"id": "5b", "scene": "s5", "text": "The curtain attached to the strip shows the height assigned to them. Eight minus four x squared, the same all the way along."},
+  {"id": "5c", "scene": "s5", "text": "As x grows, the strip gets shorter, and the height drops below zero. The inputs never leave the triangle.", "gap": 1.2},
+
+  {"id": "6a", "scene": "s6", "text": "So are we ignoring y? No. A formula with no y in it means that changing y, while keeping x fixed, does not change the output."},
+  {"id": "6b", "scene": "s6", "text": "For example, f of two, two, f of two, three, and f of two, five, are all negative eight. Three different input locations, one height. The surface runs level along the y direction."},
+  {"id": "6c", "scene": "s6", "text": "And y still matters to the average, because the triangle gives different amounts of area at different x values."},
+  {"id": "6d", "scene": "s6", "text": "For a fixed x, y runs from x to five. So the strip of allowed y values has length five minus x."},
+  {"id": "6e", "scene": "s6", "text": "Integrating in y makes that explicit. The integral from x to five, of eight minus four x squared, d y, equals eight minus four x squared, times five minus x. Height, times length. That's the area of the curtain."},
+  {"id": "6f", "scene": "s6", "text": "So the average becomes two over twenty-five, times the integral from zero to five, of height, times length of the strip, d x."},
+  {"id": "6g", "scene": "s6", "text": "The function supplies the height. The region supplies how much area receives that height.", "gap": 1.2},
+
+  {"id": "7a", "scene": "s7", "text": "So what area goes in the denominator? For the average value of f over D, the definition is: one over the area of D, times the double integral of f over D."},
+  {"id": "7b", "scene": "s7", "text": "Imagine dividing the input triangle into tiny, equal-area tiles, taking the function's value at each tile, and averaging those numbers."},
+  {"id": "7c", "scene": "s7", "text": "Make the tiles smaller, and that simple average settles down. That is all this formula does."},
+  {"id": "7d", "scene": "s7", "text": "So the denominator is the area of the specified triangle, in the x y plane. Not the area of the curved surface. And not the area of a cross section.", "gap": 1.2},
+
+  {"id": "8a", "scene": "s8", "text": "Here's an electronics version. Imagine D is a triangular circuit board, and f of x, y is the voltage measured at each location."},
+  {"id": "8b", "scene": "s8", "text": "A reading of negative eight volts does not remove that location from the board. It contributes a negative number to the average voltage. The height picture works the same way."},
+  {"id": "8c", "scene": "s8", "text": "That also answers the worry about integrating over nothing. Negative function values are still values."},
+  {"id": "8d", "scene": "s8", "text": "When x is bigger than the square root of two, the height goes negative, and those contributions stay in the average. Stopping there would throw away part of the specified region.", "gap": 1.2},
+
+  {"id": "9a", "scene": "s9", "text": "If you do evaluate it, this particular average comes out to negative twenty-six thirds, about negative eight point six seven."},
+  {"id": "9b", "scene": "s9", "text": "Picture every column leveling out to one common height. That flat slab is the average. And a negative average is perfectly valid."},
+  {"id": "9c", "scene": "s9", "text": "So, the takeaway. Region: right. Function: right. Order of integration: fine. The single fix is the number out front. One over the triangle's area: two over twenty-five.", "gap": 2.5}
+]

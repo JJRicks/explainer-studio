@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Explainer studio</title>
+<link rel="stylesheet" href="/node_modules/katex/dist/katex.min.css">
+<style>
+  :root {
+    --bg: #0d1117; --ink: #e6edf3; --dim: #8b949e; --faint: #30363d;
+    --x: #d2a8ff; --y: #7ee787; --z: #f2cc60; --D: #58a6ff;
+    --bad: #ff7b72; --good: #56d364; --u: #ff9e64; --v: #79c0ff; --w: #f778ba;
+  }
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  #stage {
+    position: absolute; left: 0; top: 0; width: 1920px; height: 1080px;
+    background: var(--bg); overflow: hidden; transform-origin: 0 0;
+    font-family: -apple-system, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink); -webkit-font-smoothing: antialiased;
+  }
+  #gl { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+  #overlay { position: absolute; inset: 0; }
+  .n { position: absolute; white-space: nowrap; line-height: 1.25; will-change: opacity, transform; }
+  .n.wrap { white-space: normal; line-height: 1.38; }
+  .n .katex { font-size: 1.12em; }
+  .n.math .katex { font-size: 1em; }
+  .lbl { font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dim); }
+  .dim { color: var(--dim); }
+  b, .bold { font-weight: 650; }
+  .cx { color: var(--x); } .cy { color: var(--y); } .cz { color: var(--z); } .cD { color: var(--D); }
+  .bad { color: var(--bad); } .good { color: var(--good); }
+  .knum { font-family: KaTeX_Main, "Times New Roman", serif; font-size: 1.12em; font-variant-numeric: tabular-nums; }
+  .num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+  .chapter { font-size: 30px; font-weight: 650; letter-spacing: 0.01em; }
+  .chapter .k { display: inline-block; min-width: 40px; height: 40px; line-height: 40px; margin-right: 16px;
+    text-align: center; border-radius: 10px; background: #161b22; border: 1.5px solid var(--faint);
+    color: var(--dim); font-size: 22px; font-variant-numeric: tabular-nums; }
+  .card { border: 1.5px solid var(--faint); border-radius: 16px; background: rgba(22, 27, 34, 0.86); padding: 18px 26px; }
+  .box { border: 2px solid var(--ink); border-radius: 6px; padding: 16px 22px; }
+  .ring { position: absolute; border: 3px solid var(--z); border-radius: 10px; pointer-events: none; box-sizing: border-box; }
+  .strike { position: absolute; height: 4px; background: var(--bad); border-radius: 2px; transform-origin: 0 50%; pointer-events: none; }
+  .n code { font-family: ui-monospace, Menlo, monospace; font-size: 0.9em; color: #a5d6ff; }
+  .tick { font-size: 24px; color: var(--dim); font-variant-numeric: tabular-nums; }
+  .pt { font-size: 26px; }
+  .tag { font-size: 27px; font-weight: 600; padding: 3px 12px; border-radius: 8px; background: rgba(13, 17, 23, 0.82); }
+  #bar { position: absolute; left: 0; bottom: 0; height: 6px; width: 1920px; display: flex; gap: 3px; }
+  #bar i { display: block; height: 100%; background: #1c2129; position: relative; overflow: hidden; }
+  #bar i b { position: absolute; left: 0; top: 0; bottom: 0; background: #4d5866; }
+  #err { position: absolute; left: 20px; top: 20px; color: #ff6b6b; font: 20px monospace; white-space: pre-wrap; z-index: 9; }
+  #badge { position: absolute; left: 14px; bottom: 16px; padding: 4px 12px; border-radius: 8px; background: rgba(0, 0, 0, 0.72);
+    color: #9aa4b0; font: 600 22px ui-monospace, Menlo, monospace; display: none; z-index: 8; }
+</style>
+<script type="importmap">
+{ "imports": {
+    "three": "/node_modules/three/build/three.module.js",
+    "three/addons/": "/node_modules/three/examples/jsm/",
+    "katex": "/node_modules/katex/dist/katex.mjs"
+} }
+</script>
+</head>
+<body>
+<div id="stage">
+  <canvas id="gl"></canvas>
+  <div id="overlay"></div>
+  <div id="bar"></div>
+  <div id="badge"></div>
+  <div id="err"></div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
