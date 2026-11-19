@@ -51,7 +51,7 @@ Read the PNGs the tools print with your image-reading tool. Iterate on `sheet` u
 ## Before you call a video done
 
 - `./studio check <name>` reports no errors, and you have looked at each note it printed.
-- `./studio hear <name>` shows every line understood; anything marked `!!` is only numerals or punctuation.
+- `./studio hear <name>` shows every line understood; you have read each pair marked `!!` and none would mislead a listener.
 - You have looked at a `--cues` sheet of the final state of every scene, plus the middle of every camera move.
 - Nothing important is hidden behind a surface, off the edge of the frame, or on top of other text.
 - The numbers on screen are right: recompute them, do not copy them from the source material.

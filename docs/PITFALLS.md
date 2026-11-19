@@ -56,7 +56,7 @@ Every item here cost time once. They are grouped by where you will meet them.
 
 ## Narration
 
-**You cannot hear it — `hear` is the check.** Run it after every wording change. Differences that are only numerals ("8" for "eight") are fine; a changed word is not.
+**You cannot hear it — `hear` is the check.** Run it after every wording change. It ignores numerals ("8" for "eight") and marks lines where any other word differs with `!!`; read those. It would not catch a wrong number, so skim the rest once.
 
 **Homophones.** "Plain average" was heard as "plane average" in a video full of planes; "y" is heard as "why" (harmless, but keep sentences around it unambiguous).
 
